@@ -1,4 +1,4 @@
-let aleatorio = Math.floor(Math.random() * 10 + 1)
+let aleatorio = Math.floor(Math.random() * 100 + 1)
 let entradaUser = "";
 let tentativas = 3
 
