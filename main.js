@@ -1,4 +1,4 @@
-let aleatorio = Math.floor(Math.random() * 10 + 1)
+let aleatorio = Math.floor(Math.random() * 100 + 1)
 let entradaUser = "";
 let tentativas = 3
 
@@ -30,6 +30,5 @@ process.stdin.on("data", function (data) {
         console.log("voce tentou demais e o numero mudou, tente novamente")
         aleatorio = Math.floor(Math.random() * 10)
         
-        //console.log("novo numero: " + aleatorio)
     }
 })
