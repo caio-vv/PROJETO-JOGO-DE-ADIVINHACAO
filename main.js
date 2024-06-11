@@ -28,7 +28,7 @@ process.stdin.on("data", function (data) {
         console.log("o numero era: " + aleatorio)
         tentativas = 3
         console.log("voce tentou demais e o numero mudou, tente novamente")
-        aleatorio = Math.floor(Math.random() * 10)
+        aleatorio = Math.floor(Math.random() * 100)
         
     }
 })
