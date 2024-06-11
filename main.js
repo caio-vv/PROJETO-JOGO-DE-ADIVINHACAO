@@ -1,9 +1,9 @@
-let aleatorio = Math.floor(Math.random() * 100 + 1)
+let aleatorio = Math.floor(Math.random() * 101 + 100)
 let entradaUser = "";
 let tentativas = 3
 
 //console.log("numero aleatorio: " + aleatorio)
-console.log("adivinhe o numero de 0 a 10")
+console.log("adivinhe o numero de 100 a 200")
 
 process.stdin.on("data", function (data) {
     entradaUser = Number(data.toString().trim().toLowerCase());
@@ -28,7 +28,7 @@ process.stdin.on("data", function (data) {
         console.log("o numero era: " + aleatorio)
         tentativas = 3
         console.log("voce tentou demais e o numero mudou, tente novamente")
-        aleatorio = Math.floor(Math.random() * 100)
+        aleatorio = Math.floor(Math.random() * 101 + 100)
         
     }
 })
